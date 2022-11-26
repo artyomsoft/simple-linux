@@ -1,0 +1,6 @@
+# Ensure shell script uses LF.
+Dockerfile  eol=lf
+*.sh        eol=lf
+*.bat       eol=crlf
+/src/init   eol=lf
+/src/syslinux.cfg eol=lf

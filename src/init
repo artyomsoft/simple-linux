@@ -1,0 +1,9 @@
+#! /bin/sh
+mount -t sysfs sysfs /sys
+mount -t proc proc /proc
+mount -t devtmpfs udev /dev
+sysctl -w kernel.printk="2 4 1 7"
+#exec setsid cttyhack sh
+/bin/sh
+poweroff -f
+
