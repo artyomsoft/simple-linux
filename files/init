@@ -6,4 +6,3 @@ sysctl -w kernel.printk="2 4 1 7"
 #exec setsid cttyhack sh
 /bin/sh
 poweroff -f
-

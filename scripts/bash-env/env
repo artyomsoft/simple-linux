@@ -1,0 +1,4 @@
+#! /bin/bash
+set -e
+. $(dirname $(realpath $BASH_SOURCE))/include.sh
+. $(dirname $(realpath $BASH_SOURCE))/env-vars.sh 	
