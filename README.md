@@ -19,6 +19,6 @@ To run Simple Linux if you have allready built it:
 
 To build image for writing to flash disk:
 
-    docker run -v ${pwd}:/app/linux --rm -it simple-linux image
+    docker run -v ${pwd}:/app/linux --privileged --rm -it simple-linux image
 
 You must built linux before it.
