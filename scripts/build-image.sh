@@ -20,8 +20,8 @@ cp ${LINUX_DIR}/${LINUX_FILENAME} ${LINUX_DIR}/${INITRD_FILENAME} ${MOUNT}
 mkdir ${MOUNT}/boot
 extlinux --install ${MOUNT}/boot
 cp ${FILES_DIR}/syslinux.cfg ${MOUNT}/boot
-echo "  KERNEL /${LINUX_FILENAME}" >> ${MOUNT}/boot/syslinux.cfg}
-echo "  APPEND initrd=/${INIRD_FILENAME} nomodeset" >> ${MOUNT}/boot/syslinux.cfg 
+echo "  KERNEL /${LINUX_FILENAME}" >> ${MOUNT}/boot/syslinux.cfg
+echo "  APPEND initrd=/${INITRD_FILENAME} nomodeset" >> ${MOUNT}/boot/syslinux.cfg 
 umount ${MOUNT}
 losetup -D
 dd if=/usr/lib/syslinux/mbr/mbr.bin of=$IMAGE_FILE bs=440 count=1 conv=notrunc
