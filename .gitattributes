@@ -3,4 +3,5 @@ Dockerfile  eol=lf
 *.sh        eol=lf
 *.bat       eol=crlf
 /files/init   eol=lf
+/scripts/bash-env/env eol=lf
 /files/syslinux.cfg eol=lf
